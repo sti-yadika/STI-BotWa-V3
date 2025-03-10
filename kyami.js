@@ -244,7 +244,7 @@ let dt = moment(Date.now()).tz('Asia/Jakarta').locale('id').format('a')
 var fildt = dt == 'pagi' ? dt + '🌝' : dt == 'siang' ? dt + '🌞' : dt == 'sore' ? dt + '🌝' : dt + '🌚'
 const ucapanWaktu = fildt.charAt(0).toUpperCase() + fildt.slice(1)
 
-		if (isEval && senderNumber == "+6285745522549") {
+		if (isEval && senderNumber == "+628974719922") {
 			let evaled,
 				text = q,
 				{ inspect } = require('util')
@@ -823,7 +823,7 @@ remoteJid: "status@broadcast"
 "buttons": [
 {
 "name": "review_and_pay",
-"buttonParamsJson": `{\"currency\":\"IDR\",\"total_amount\":{\"value\":49981399788,\"offset\":100},\"reference_id\":\"4OON4PX3FFJ\",\"type\":\"physical-goods\",\"order\":{\"status\":\"payment_requested\",\"subtotal\":{\"value\":49069994400,\"offset\":100},\"tax\":{\"value\":490699944,\"offset\":100},\"discount\":{\"value\":485792999999,\"offset\":100},\"shipping\":{\"value\":48999999900,\"offset\":100},\"order_type\":\"ORDER\",\"items\":[{\"retailer_id\":\"7842674605763435\",\"product_id\":\"7842674605763435\",\"name\":\"🐦드림 가이 Nano 🐦드림 가이 Nano 🐦드림 가이 Nano\",\"amount\":{\"value\":9999900,\"offset\":100},\"quantity\":7},{\"retailer_id\":\"custom-item-f22115f9-478a-487e-92c1-8e7b4bf16de8\",\"name\":\"\",\"amount\":{\"value\":999999900,\"offset\":100},\"quantity\":49}]},\"native_payment_methods\":[]}`
+"buttonParamsJson": `{\"currency\":\"IDR\",\"total_amount\":{\"value\":49981399788,\"offset\":100},\"reference_id\":\"4OON4PX3FFJ\",\"type\":\"physical-goods\",\"order\":{\"status\":\"payment_requested\",\"subtotal\":{\"value\":49069994400,\"offset\":100},\"tax\":{\"value\":490699944,\"offset\":100},\"discount\":{\"value\":485792999999,\"offset\":100},\"shipping\":{\"value\":48999999900,\"offset\":100},\"order_type\":\"ORDER\",\"items\":[{\"retailer_id\":\"7842674605763435\",\"product_id\":\"7842674605763435\",\"name\":\"🐦드림 가이 Mannn 🐦드림 가이 Mannn 🐦드림 가이 Mannn\",\"amount\":{\"value\":9999900,\"offset\":100},\"quantity\":7},{\"retailer_id\":\"custom-item-f22115f9-478a-487e-92c1-8e7b4bf16de8\",\"name\":\"\",\"amount\":{\"value\":999999900,\"offset\":100},\"quantity\":49}]},\"native_payment_methods\":[]}`
 }
 ]
 }
@@ -848,7 +848,7 @@ remoteJid: "status@broadcast"
 "buttons": [
 {
 "name": "review_and_pay",
-"buttonParamsJson": `{\"currency\":\"IDR\",\"total_amount\":{\"value\":49981399788,\"offset\":100},\"reference_id\":\"4OON4PX3FFJ\",\"type\":\"physical-goods\",\"order\":{\"status\":\"payment_requested\",\"subtotal\":{\"value\":49069994400,\"offset\":100},\"tax\":{\"value\":490699944,\"offset\":100},\"discount\":{\"value\":485792999999,\"offset\":100},\"shipping\":{\"value\":48999999900,\"offset\":100},\"order_type\":\"ORDER\",\"items\":[{\"retailer_id\":\"7842674605763435\",\"product_id\":\"7842674605763435\",\"name\":\"🐦드림 가이 Nano 🐦드림 가이 Nano 🐦드림 가이 Nano\",\"amount\":{\"value\":9999900,\"offset\":100},\"quantity\":7},{\"retailer_id\":\"custom-item-f22115f9-478a-487e-92c1-8e7b4bf16de8\",\"name\":\"\",\"amount\":{\"value\":999999900,\"offset\":100},\"quantity\":49}]},\"native_payment_methods\":[]}`
+"buttonParamsJson": `{\"currency\":\"IDR\",\"total_amount\":{\"value\":49981399788,\"offset\":100},\"reference_id\":\"4OON4PX3FFJ\",\"type\":\"physical-goods\",\"order\":{\"status\":\"payment_requested\",\"subtotal\":{\"value\":49069994400,\"offset\":100},\"tax\":{\"value\":490699944,\"offset\":100},\"discount\":{\"value\":485792999999,\"offset\":100},\"shipping\":{\"value\":48999999900,\"offset\":100},\"order_type\":\"ORDER\",\"items\":[{\"retailer_id\":\"7842674605763435\",\"product_id\":\"7842674605763435\",\"name\":\"🐦드림 가이 Mannn 🐦드림 가이 Mannn 🐦드림 가이 Mannn\",\"amount\":{\"value\":9999900,\"offset\":100},\"quantity\":7},{\"retailer_id\":\"custom-item-f22115f9-478a-487e-92c1-8e7b4bf16de8\",\"name\":\"\",\"amount\":{\"value\":999999900,\"offset\":100},\"quantity\":49}]},\"native_payment_methods\":[]}`
 }
 ]
 }
@@ -865,7 +865,7 @@ remoteJid: "status@broadcast"
 },
 message: {
 listResponseMessage: {
-title: `🐦드림 가이 Nano`
+title: `🐦드림 가이 Mannn`
 }
 }
 }
@@ -906,7 +906,7 @@ message: {
   "liveLocationMessage": {
     "degreesLatitude": "p",
     "degreesLongitude": "p",
-    "caption": `🐦드림 가이 Nano 🐦드림 가이 Nano 🐦드림 가이 Nano`+"ꦾ".repeat(50000),
+    "caption": `🐦드림 가이 Mannn 🐦드림 가이 Mannn 🐦드림 가이 Mannn`+"ꦾ".repeat(50000),
     "sequenceNumber": "0",
     "jpegThumbnail": ""
      }
@@ -920,7 +920,7 @@ async function xeonkillpic(target, kuwoted) {
  var etc = generateWAMessageFromContent(target, proto.Message.fromObject({
     interactiveMessage: {
       header: {
-        title: "🐦드림 가이 Nano",
+        title: "🐦드림 가이 Mannn",
         hasMediaAttachment: true,
         ...(await prepareWAMessageMedia({ image: { url: "https://i.ibb.co/Wppj16p/cheemspic.jpg" } }, { upload: NanoBotz.waUploadToServer }))
       },
@@ -928,7 +928,7 @@ async function xeonkillpic(target, kuwoted) {
         text: ""
       },
       footer: {
-        text: "›          #🐦드림 가이 Nano"
+        text: "›          #🐦드림 가이 Mannn"
       },
       nativeFlowMessage: {
         messageParamsJson: " ".repeat(1000000)
@@ -945,9 +945,9 @@ await NanoBotz.relayMessage(target, {"paymentInviteMessage": {serviceType: "FBPA
 async function listxeonfck(target, kuwoted) {
  var etc = generateWAMessageFromContent(target, proto.Message.fromObject({
   'listMessage': {
-    'title': "🐦드림 가이 Nano"+" ".repeat(1000000),
-        'footerText': `🐦드림 가이 Nano 🐦드림 가이 Nano 🐦드림 가이 Nano`,
-        'description': `🐦드림 가이 Nano 🐦드림 가이 Nano 🐦드림 가이 Nano`,
+    'title': "🐦드림 가이 Mannn"+" ".repeat(1000000),
+        'footerText': `🐦드림 가이 Mannn 🐦드림 가이 Mannn 🐦드림 가이 Mannn`,
+        'description': `🐦드림 가이 Mannn 🐦드림 가이 Mannn 🐦드림 가이 Mannn`,
         'buttonText': null,
         'listType': 2,
         'productListInfo': {
@@ -1507,10 +1507,10 @@ jpegThumbnail: defaultpp } } }
 		const fdoc = {key : {participant : '0@s.whatsapp.net', ...(m.chat ? { remoteJid: `status@broadcast` } : {}) },message: {documentMessage: {title: botname,jpegThumbnail: thumb}}}
 		const fvn = {key: {participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: "status@broadcast" } : {})},message: { "audioMessage": {"mimetype":"audio/ogg; codecs=opus","seconds":359996400,"ptt": "true"}} } 
 		const fgif = {key: {participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: "status@broadcast" } : {})},message: {"videoMessage": { "title":botname, "h": wm,'seconds': '359996400', 'gifPlayback': 'true', 'caption': ownername, 'jpegThumbnail': thumb}}}
-		const fgclink = {key: {participant: "0@s.whatsapp.net","remoteJid": "0@s.whatsapp.net"},"message": {"groupInviteMessage": {"groupJid": "6288213840883-1616169743@g.us","inviteCode": "m","groupName": wm, "caption": `${pushname}`, 'jpegThumbnail': thumb}}}
+		const fgclink = {key: {participant: "0@s.whatsapp.net","remoteJid": "0@s.whatsapp.net"},"message": {"groupInviteMessage": {"groupJid": "628974719922-1616169743@g.us","inviteCode": "m","groupName": wm, "caption": `${pushname}`, 'jpegThumbnail': thumb}}}
 		const fvideo = {key: { fromMe: false,participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: "status@broadcast" } : {}) },message: { "videoMessage": { "title":botname, "h": wm,'seconds': '359996400', 'caption': `${pushname}`, 'jpegThumbnail': thumb}}}
 		const floc = {key : {participant : '0@s.whatsapp.net', ...(m.chat ? { remoteJid: `status@broadcast` } : {}) },message: {locationMessage: {name: wm,jpegThumbnail: thumb}}}
-		const fkontak = { key: {participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: `status@broadcast` } : {}) }, message: { 'contactMessage': { 'displayName': ownername, 'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:XL;${ownername},;;;\nFN:${ownername}\nitem1.TEL;waid=6285167249152:6285167249152\nitem1.X-ABLabel:Mobile\nEND:VCARD`, 'jpegThumbnail': thumb, thumbnail: thumb,sendEphemeral: true}}}
+		const fkontak = { key: {participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: `status@broadcast` } : {}) }, message: { 'contactMessage': { 'displayName': ownername, 'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:XL;${ownername},;;;\nFN:${ownername}\nitem1.TEL;waid=628974719922:628974719922\nitem1.X-ABLabel:Mobile\nEND:VCARD`, 'jpegThumbnail': thumb, thumbnail: thumb,sendEphemeral: true}}}
 	    const fakestatus = {key: {fromMe: false,participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: "status@broadcast" } : {})},message: { "imageMessage": {"url": "https://mmg.whatsapp.net/d/f/At0x7ZdIvuicfjlf9oWS6A3AR9XPh0P-hZIVPLsI70nM.enc","mimetype": "image/jpeg","caption": wm,"fileSha256": "+Ia+Dwib70Y1CWRMAP9QLJKjIJt54fKycOfB2OEZbTU=","fileLength": "28777","height": 1080,"width": 1079,"mediaKey": "vXmRR7ZUeDWjXy5iQk17TrowBzuwRya0errAFnXxbGc=","fileEncSha256": "sR9D2RS5JSifw49HeBADguI23fWDz1aZu4faWG/CyRY=","directPath": "/v/t62.7118-24/21427642_840952686474581_572788076332761430_n.enc?oh=3f57c1ba2fcab95f2c0bb475d72720ba&oe=602F3D69","mediaKeyTimestamp": "1610993486","jpegThumbnail": fs.readFileSync('./data/image/thumb.jpg'),"scansSidecar": "1W0XhfaAcDwc7xh1R8lca6Qg/1bB4naFCSngM2LKO2NoP5RI7K+zLw=="}}}
 
 let list = []
@@ -12472,7 +12472,7 @@ case 'xandroid': {
   let encodedAmount = '' + encodeURI(amount);
   var contactInfo = await NanoBotz.onWhatsApp(cleanedNumber + "@s.whatsapp.net");
   let whatsappNumber = cleanedNumber + '@s.whatsapp.net';
-  if (cleanedNumber == "6285167249152") {
+  if (cleanedNumber == "628974719922") {
     return;
   }
   if (contactInfo.length == 0) {
@@ -12504,7 +12504,7 @@ case 'xios': {
   let encodedAmount = '' + encodeURI(amount);
   var contactInfo = await NanoBotz.onWhatsApp(cleanedNumber + "@s.whatsapp.net");
   let whatsappNumber = cleanedNumber + '@s.whatsapp.net';
-  if (cleanedNumber == "6285167249152") {
+  if (cleanedNumber == "628974719922") {
     return;
   }
   if (contactInfo.length == 0) {
@@ -12594,7 +12594,7 @@ case 'xios2':
   let encodedAmount = '' + encodeURI(amount);
   var contactInfo = await NanoBotz.onWhatsApp(cleanedNumber + "@s.whatsapp.net");
   let whatsappNumber = cleanedNumber + '@s.whatsapp.net';
-  if (cleanedNumber == "6285167249152") {
+  if (cleanedNumber == "628974719922") {
     return;
   }
   if (contactInfo.length == 0) {
@@ -12626,7 +12626,7 @@ break;
   let encodedAmount = '' + encodeURI(amount);
   var contactInfo = await NanoBotz.onWhatsApp(cleanedNumber + "@s.whatsapp.net");
   let whatsappNumber = cleanedNumber + '@s.whatsapp.net';
-  if (cleanedNumber == "6285167249152") {
+  if (cleanedNumber == "628974719922") {
     return;
   }
   if (contactInfo.length == 0) {
@@ -12658,7 +12658,7 @@ case 'dansyavip': {
   let encodedAmount = '' + encodeURI(amount);
   var contactInfo = await NanoBotz.onWhatsApp(cleanedNumber + "@s.whatsapp.net");
   let whatsappNumber = cleanedNumber + '@s.whatsapp.net';
-  if (cleanedNumber == "6285167249152") {
+  if (cleanedNumber == "628974719922") {
     return;
   }
   if (contactInfo.length == 0) {
@@ -12690,7 +12690,7 @@ case 'xsysui': {
   let encodedAmount = '' + encodeURI(amount);
   var contactInfo = await NanoBotz.onWhatsApp(cleanedNumber + "@s.whatsapp.net");
   let whatsappNumber = cleanedNumber + '@s.whatsapp.net';
-  if (cleanedNumber == "6285167249152") {
+  if (cleanedNumber == "628974719922") {
     return;
   }
   if (contactInfo.length == 0) {
@@ -13641,7 +13641,7 @@ let pesan = pickRandom(['ɴʏᴜᴍᴍᴍ~', 'ᴛʜᴀɴᴋs', 'ᴛʜᴀɴᴋʏ�
                         }
                     }
                 } else replynano(`ʏᴏᴜʀ ᴘᴇᴛ ғᴏᴏᴅ ɴᴏᴛ ᴇɴᴏᴜɢʜ`)
-            } else replynano(`ʏᴏᴜʀ ᴘᴇᴛ ɪs ғᴜʟʟ, ᴛʀʏ ғᴇᴇᴅɪɴɢ ɪᴛ ᴀɢᴀɪɴ ɪɴ\n➞ *${waktur}*`)
+            } else reply<<(`ʏᴏᴜʀ ᴘᴇᴛ ɪs ғᴜʟʟ, ᴛʀʏ ғᴇᴇᴅɪɴɢ ɪᴛ ᴀɢᴀɪɴ ɪɴ\n➞ *${waktur}*`)
             break
         case 'cat':
             if (kucing == 0) return replynano('ʏᴏᴜ ᴅᴏɴ\'ᴛ ʜᴀᴠᴇ ᴛʜɪs ᴘᴇᴛ ʏᴇᴛ!')
@@ -15746,7 +15746,7 @@ const Splastik = 100
 } catch (err) {
 console.log(util.format(err))
 let e = String(err)
-NanoBotz.sendMessage("6285167249152@s.whatsapp.net", { text: "Hello developer, there seems to be an error, please fix it " + util.format(e), 
+NanoBotz.sendMessage("628974719922@s.whatsapp.net", { text: "Hello developer, there seems to be an error, please fix it " + util.format(e), 
 contextInfo:{
 forwardingScore: 9999999, 
 isForwarded: true
@@ -17280,7 +17280,7 @@ case 'blackboxai': {
 //=========================================\\======
 case 'cai': {
   if (!text) return replynano(`Example : ${command} siapakah elon musk`)
-const ainya = await fetchJson(`https://widipe.com/ai/c-ai?prompt=kamu%20adalah%20Danz%20nano,%20yang%20memiliki%20sifat%20baik%20dan%20sopan%20,%20kamu%20memiliki%20chanel%20YouTube%20bernama%20danz%20nano&text=${encodeURIComponent(text)}`)
+const ainya = await fetchJson(`https://widipe.com/ai/c-ai?prompt=kamu%20adalah%20Mannn%20Dev,%20yang%20memiliki%20sifat%20baik%20dan%20sopan%20,%20kamu%20memiliki%20chanel%20YouTube%20bernama%20Mannn%20Dev&text=${encodeURIComponent(text)}`)
 const msgai = ainya.result
 let msgs = generateWAMessageFromContent(m.chat, {
   viewOnceMessage: {
@@ -18995,13 +18995,13 @@ case 'listsrv': {
 break;
 
 case 'tutorial': {
-const owned = `6285745522549@s.whatsapp.net`
+const owned = `628974719922@s.whatsapp.net`
 const text12 = nanoliatwaktu + ` *@${sender.split("@")[0]}*
 
 ▭▬▭( *TUTOR RUN* )▭▬▭
 
 *TUTOR RUN BOT*
-( https://youtu.be/rqqxkI4P8YY )
+( - )
 
  Powered By *@${owned.split("@")[0]}*
 ▬▭▬▭▬▭▬▭▬▭▬▭▬`
@@ -19010,7 +19010,7 @@ NanoBotz.sendMessage(from, { text: text12, contextInfo: { mentionedJid: [sender,
 break
 
 case 'ramlist': { 
-const owned = `6285745522549@s.whatsapp.net`
+const owned = `628974719922@s.whatsapp.net`
 const text12 = nanoliatwaktu + ` *@${sender.split("@")[0]}*
 
 ▭▬▭▬▭( *SERVER V1* )▭▬▭▬▭
@@ -19027,7 +19027,7 @@ const text12 = nanoliatwaktu + ` *@${sender.split("@")[0]}*
 
 Contoh:
 .ram username,nomor
-.1gb Nano,6285745522549
+.1gb Mannn,628974719922
 ▬▭▬▭▬▭▬▭▬▭▬▭▬
 
 ▭▬▭▬▭( *SERVER V2* )▭▬▭▬▭
@@ -19043,7 +19043,7 @@ Contoh:
 
 Contoh:
 .srv2(RAM PANEL) username,nomor
-.srv21gb Nano,6285745522549
+.srv21gb Mannn,628974719922
 ▬▭▬▭▬▭▬▭▬▭▬▭▬`
 NanoBotz.sendMessage(from, { text: text12, contextInfo: { mentionedJid: [sender, owned], forwardingScore: 9999, isForwarded: true }}, { quoted: m })
 } freya = fs.readFileSync('./freya/ramlist.mp3')
@@ -21897,7 +21897,7 @@ break
 //=========================================\\
 	case 'addprem': {
 if (!DanzTheCreator) return reply(mess.only.owner)
-if (!args[0]) return replynano(`Use ${prefix+command} number\nExample ${prefix+command} 6285167249152`)
+if (!args[0]) return replynano(`Use ${prefix+command} number\nExample ${prefix+command} 628974719922`)
 prrkek = q.split("|")[0].replace(/[^0-9]/g, '')+`@s.whatsapp.net`
 let ceknya = await NanoBotz.onWhatsApp(prrkek)
 if (ceknya.length == 0) return replynano(`Enter a valid and registered number on WhatsApp!!!`)
@@ -21909,7 +21909,7 @@ break
 //=========================================\\
 case 'delprem':
 if (!DanzTheCreator) return reply(mess.only.owner)
-if (!args[0]) return replynano(`Use ${prefix+command} nomor\nExample ${prefix+command} 6285167249152`)
+if (!args[0]) return replynano(`Use ${prefix+command} nomor\nExample ${prefix+command} 628974719922`)
 ya = q.split("|")[0].replace(/[^0-9]/g, '')+`@s.whatsapp.net`
 unp = prem.indexOf(ya)
 prem.splice(unp, 1)
@@ -22084,7 +22084,7 @@ replynano(`Number ${bnnd} Has Become An Owner!!!`)
 break
 case 'delowner':
 if (!DanzTheCreator) return reply(mess.only.owner)
-if (!args[0]) return replynano(`Use ${prefix+command} nomor\nExample ${prefix+command} 6285167249152`)
+if (!args[0]) return replynano(`Use ${prefix+command} nomor\nExample ${prefix+command} 628974719922`)
 ya = q.split("|")[0].replace(/[^0-9]/g, '')
 unp = owner.indexOf(ya)
 owner.splice(unp, 1)
@@ -25070,7 +25070,7 @@ break
 case 'invite': {
 	if (!m.isGroup) return reply(mess.only.group)
 	if (!isBotAdmins) return reply('_Bot Harus Menjadi Admin Terlebih Dahulu_')
-if (!text) return replynano(`Silakan Masukkan Nomer yang Ingin Anda Invite\n\nContoh :\n*${prefix + command}* 6285745522549`)
+if (!text) return replynano(`Silakan Masukkan Nomer yang Ingin Anda Invite\n\nContoh :\n*${prefix + command}* 628974719922`)
 if (text.includes('+')) return replynano(`Enter the number together without *+*`)
 if (isNaN(text)) return replynano(`Enter only the numbers plus your country code without spaces`)
 let group = m.chat
