@@ -179,6 +179,17 @@ NanoBotz.ev.emit('messages.upsert', msg)
     	const isAdmins = m.isGroup ? groupAdmins.includes(m.sender) : false
      const jangan = m.isGroup ? pler.includes(m.chat) : false
     	const isPrem = prem.includes(m.sender)
+    	const nomore = m.sender.replace(/[^0-9]/g, '')
+    	const fsaluran = { key : {
+remoteJid: `${nomore}@s.whatsapp.net`,
+participant : `${nomore}@s.whatsapp.net`
+},
+message: {
+newsletterAdminInviteMessage: {
+newsletterJid: '120363409989642612@newsletter',
+    newsletterName: '',
+    caption: body
+}}}
     	const isUser = dansyaverifikasiuser.includes(sender)
     	const mentionUser = [...new Set([...(m.mentionedJid || []), ...(m.quoted ? [m.quoted.sender] : [])])]
     	const mentionByTag = type == 'extendedTextMessage' && m.message.extendedTextMessage.contextInfo != null ? m.message.extendedTextMessage.contextInfo.mentionedJid : []
@@ -3119,7 +3130,7 @@ Selamat datang di *${botname}*, bot WhatsApp yang siap membantu Anda!
             mentionedJid: [sender],
             forwardedNewsletterMessageInfo: {
                 newsletterName: "—You Know Mannn? Nah, It's Mannn Silence",
-                newsletterJid: `120363366790950043@newsletter`,
+                newsletterJid: `120363409989642612@newsletter`,
             },
             externalAdReply: {  
                 title: "Mannn-MD", 
@@ -3151,7 +3162,7 @@ NanoBotz.sendMessage(m.chat, {
             mentionedJid: [sender],
             forwardedNewsletterMessageInfo: {
                 newsletterName: "—You Know Mannn? Nah, It's Mannn Silence",
-                newsletterJid: `120363366790950043@newsletter`,
+                newsletterJid: `120363409989642612@newsletter`,
             },
             externalAdReply: {  
                 title: "Mannn-MD", 
@@ -3205,7 +3216,7 @@ NanoBotz.sendMessage(m.chat, {
             mentionedJid: [sender],
             forwardedNewsletterMessageInfo: {
                 newsletterName: "—You Know Mannn? Nah, It's Mannn Silence",
-                newsletterJid: `120363366790950043@newsletter`,
+                newsletterJid: `120363409989642612@newsletter`,
             },
             externalAdReply: {  
                 title: "Mannn-MD", 
@@ -3235,7 +3246,7 @@ NanoBotz.sendMessage(m.chat, {
             mentionedJid: [sender],
             forwardedNewsletterMessageInfo: {
                 newsletterName: "—You Know Mannn? Nah, It's Mannn Silence",
-                newsletterJid: `120363366790950043@newsletter`,
+                newsletterJid: `120363409989642612@newsletter`,
             },
             externalAdReply: {  
                 title: "Mannn-MD", 
@@ -3265,7 +3276,7 @@ NanoBotz.sendMessage(m.chat, {
             mentionedJid: [sender],
             forwardedNewsletterMessageInfo: {
                 newsletterName: "—You Know Mannn? Nah, It's Mannn Silence",
-                newsletterJid: `120363366790950043@newsletter`,
+                newsletterJid: `120363409989642612@newsletter`,
             },
             externalAdReply: {  
                 title: "Mannn-MD  ", 
@@ -3295,7 +3306,7 @@ NanoBotz.sendMessage(m.chat, {
             mentionedJid: [sender],
             forwardedNewsletterMessageInfo: {
                 newsletterName: "—You Know Mannn? Nah, It's Mannn Silence",
-                newsletterJid: `120363366790950043@newsletter`,
+                newsletterJid: `120363409989642612@newsletter`,
             },
             externalAdReply: {  
                 title: "Mannn-MD", 
@@ -3325,7 +3336,7 @@ NanoBotz.sendMessage(m.chat, {
             mentionedJid: [sender],
             forwardedNewsletterMessageInfo: {
                 newsletterName: "—You Know Mannn? Nah, It's Mannn Silence",
-                newsletterJid: `120363366790950043@newsletter`,
+                newsletterJid: `120363409989642612@newsletter`,
             },
             externalAdReply: {  
                 title: "Mannn-MD", 
@@ -3355,7 +3366,7 @@ NanoBotz.sendMessage(m.chat, {
             mentionedJid: [sender],
             forwardedNewsletterMessageInfo: {
                 newsletterName: "—You Know Mannn? Nah, It's Mannn Silence",
-                newsletterJid: `120363366790950043@newsletter`,
+                newsletterJid: `120363409989642612@newsletter`,
             },
             externalAdReply: {  
                 title: "Mannn-MD", 
@@ -3385,7 +3396,7 @@ NanoBotz.sendMessage(m.chat, {
             mentionedJid: [sender],
             forwardedNewsletterMessageInfo: {
                 newsletterName: "—You Know Mannn? Nah, It's Mannn Silence",
-                newsletterJid: `120363366790950043@newsletter`,
+                newsletterJid: `120363409989642612@newsletter`,
             },
             externalAdReply: {  
                 title: "Mannn-MD", 
@@ -3415,7 +3426,7 @@ NanoBotz.sendMessage(m.chat, {
             mentionedJid: [sender],
             forwardedNewsletterMessageInfo: {
                 newsletterName: "—You Know Mannn? Nah, It's Mannn Silence",
-                newsletterJid: `120363366790950043@newsletter`,
+                newsletterJid: `120363409989642612@newsletter`,
             },
             externalAdReply: {  
                 title: "Mannn-MD", 
@@ -3444,7 +3455,7 @@ NanoBotz.sendMessage(m.chat, {
             mentionedJid: [sender],
             forwardedNewsletterMessageInfo: {
                 newsletterName: "—You Know Mannn? Nah, It's Mannn Silence",
-                newsletterJid: `120363366790950043@newsletter`,
+                newsletterJid: `120363409989642612@newsletter`,
             },
             externalAdReply: {  
                 title: "Mannn-MD", 
@@ -3473,7 +3484,7 @@ NanoBotz.sendMessage(m.chat, {
             mentionedJid: [sender],
             forwardedNewsletterMessageInfo: {
                 newsletterName: "—You Know Mannn? Nah, It's Mannn Silence",
-                newsletterJid: `120363366790950043@newsletter`,
+                newsletterJid: `120363409989642612@newsletter`,
             },
             externalAdReply: {  
                 title: "Mannn-MD", 
@@ -3502,7 +3513,7 @@ NanoBotz.sendMessage(m.chat, {
             mentionedJid: [sender],
             forwardedNewsletterMessageInfo: {
                 newsletterName: "—You Know Mannn? Nah, It's Mannn Silence",
-                newsletterJid: `120363366790950043@newsletter`,
+                newsletterJid: `120363409989642612@newsletter`,
             },
             externalAdReply: {  
                 title: "Mannn-MD", 
@@ -3596,7 +3607,7 @@ NanoBotz.sendMessage(m.chat, {
             mentionedJid: [sender],
             forwardedNewsletterMessageInfo: {
                 newsletterName: "—You Know Mannn? Nah, It's Mannn Silence",
-                newsletterJid: `120363366790950043@newsletter`,
+                newsletterJid: `120363409989642612@newsletter`,
             },
             externalAdReply: {  
                 title: "Mannn-MD", 
@@ -3626,7 +3637,7 @@ NanoBotz.sendMessage(m.chat, {
             mentionedJid: [sender],
             forwardedNewsletterMessageInfo: {
                 newsletterName: "—You Know Mannn? Nah, It's Mannn Silence",
-                newsletterJid: `120363366790950043@newsletter`,
+                newsletterJid: `120363409989642612@newsletter`,
             },
             externalAdReply: {  
                 title: "Mannn-MD", 
@@ -3654,7 +3665,7 @@ NanoBotz.sendMessage(m.chat, {
             mentionedJid: [sender],
             forwardedNewsletterMessageInfo: {
                 newsletterName: "—You Know Mannn? Nah, It's Mannn Silence",
-                newsletterJid: `120363366790950043@newsletter`,
+                newsletterJid: `120363409989642612@newsletter`,
             },
             externalAdReply: {  
                 title: "Mannn-MD", 
@@ -3682,7 +3693,7 @@ NanoBotz.sendMessage(m.chat, {
             mentionedJid: [sender],
             forwardedNewsletterMessageInfo: {
                 newsletterName: "—You Know Mannn? Nah, It's Mannn Silence",
-                newsletterJid: `120363366790950043@newsletter`,
+                newsletterJid: `120363409989642612@newsletter`,
             },
             externalAdReply: {  
                 title: "Mannn-MD", 
@@ -3711,7 +3722,7 @@ NanoBotz.sendMessage(m.chat, {
             mentionedJid: [sender],
             forwardedNewsletterMessageInfo: {
                 newsletterName: "—You Know Mannn? Nah, It's Mannn Silence",
-                newsletterJid: `120363366790950043@newsletter`,
+                newsletterJid: `120363409989642612@newsletter`,
             },
             externalAdReply: {  
                 title: "Mannn-MD", 
@@ -3740,7 +3751,7 @@ NanoBotz.sendMessage(m.chat, {
             mentionedJid: [sender],
             forwardedNewsletterMessageInfo: {
                 newsletterName: "—You Know Mannn? Nah, It's Mannn Silence",
-                newsletterJid: `120363366790950043@newsletter`,
+                newsletterJid: `120363409989642612@newsletter`,
             },
             externalAdReply: {  
                 title: "Mannn-MD", 
@@ -3769,7 +3780,7 @@ NanoBotz.sendMessage(m.chat, {
             mentionedJid: [sender],
             forwardedNewsletterMessageInfo: {
                 newsletterName: "—You Know Mannn? Nah, It's Mannn Silence",
-                newsletterJid: `120363366790950043@newsletter`,
+                newsletterJid: `120363409989642612@newsletter`,
             },
             externalAdReply: {  
                 title: "Mannn-MD", 
@@ -3798,7 +3809,7 @@ NanoBotz.sendMessage(m.chat, {
             mentionedJid: [sender],
             forwardedNewsletterMessageInfo: {
                 newsletterName: "—You Know Mannn? Nah, It's Mannn Silence",
-                newsletterJid: `120363366790950043@newsletter`,
+                newsletterJid: `120363409989642612@newsletter`,
             },
             externalAdReply: {  
                 title: "Mannn-MD", 
@@ -3827,7 +3838,7 @@ NanoBotz.sendMessage(m.chat, {
             mentionedJid: [sender],
             forwardedNewsletterMessageInfo: {
                 newsletterName: "—You Know Mannn? Nah, It's Mannn Silence",
-                newsletterJid: `120363366790950043@newsletter`,
+                newsletterJid: `120363409989642612@newsletter`,
             },
             externalAdReply: {  
                 title: "Mannn-MD", 
@@ -3856,7 +3867,7 @@ NanoBotz.sendMessage(m.chat, {
             mentionedJid: [sender],
             forwardedNewsletterMessageInfo: {
                 newsletterName: "—You Know Mannn? Nah, It's Mannn Silence",
-                newsletterJid: `120363366790950043@newsletter`,
+                newsletterJid: `120363409989642612@newsletter`,
             },
             externalAdReply: {  
                 title: "Mannn-MD", 
@@ -3885,7 +3896,7 @@ NanoBotz.sendMessage(m.chat, {
             mentionedJid: [sender],
             forwardedNewsletterMessageInfo: {
                 newsletterName: "—You Know Mannn? Nah, It's Mannn Silence",
-                newsletterJid: `120363366790950043@newsletter`,
+                newsletterJid: `120363409989642612@newsletter`,
             },
             externalAdReply: {  
                 title: "Mannn-MD", 
@@ -3914,7 +3925,7 @@ NanoBotz.sendMessage(m.chat, {
             mentionedJid: [sender],
             forwardedNewsletterMessageInfo: {
                 newsletterName: "—You Know Mannn? Nah, It's Mannn Silence",
-                newsletterJid: `120363366790950043@newsletter`,
+                newsletterJid: `120363409989642612@newsletter`,
             },
             externalAdReply: {  
                 title: "Mannn-MD", 
@@ -3943,7 +3954,7 @@ NanoBotz.sendMessage(m.chat, {
             mentionedJid: [sender],
             forwardedNewsletterMessageInfo: {
                 newsletterName: "—You Know Mannn? Nah, It's Mannn Silence",
-                newsletterJid: `120363366790950043@newsletter`,
+                newsletterJid: `120363409989642612@newsletter`,
             },
             externalAdReply: {  
                 title: "Mannn-MD", 
@@ -3972,7 +3983,7 @@ NanoBotz.sendMessage(m.chat, {
             mentionedJid: [sender],
             forwardedNewsletterMessageInfo: {
                 newsletterName: "—You Know Mannn? Nah, It's Mannn Silence",
-                newsletterJid: `120363366790950043@newsletter`,
+                newsletterJid: `120363409989642612@newsletter`,
             },
             externalAdReply: {  
                 title: "Mannn-MD", 
@@ -8187,7 +8198,7 @@ let msg = generateWAMessageFromContent(from, {
           forwardingScore: 999,
           isForwarded: true,
           forwardedNewsletterMessageInfo: {
-            newsletterJid: '120363366790950043@newsletter',
+            newsletterJid: '120363409989642612@newsletter',
             newsletterName: ownername,
             serverMessageId: 143
           }
@@ -8292,7 +8303,7 @@ replynano('Success in turning off antivirus this group')
           forwardingScore: 999,
           isForwarded: true,
           forwardedNewsletterMessageInfo: {
-            newsletterJid: '120363366790950043@newsletter',
+            newsletterJid: '120363409989642612@newsletter',
             newsletterName: ownername,
             serverMessageId: 143
           }
@@ -8382,7 +8393,7 @@ replynano('Success in turning off nsfw in this group')
           forwardingScore: 999,
           isForwarded: true,
           forwardedNewsletterMessageInfo: {
-            newsletterJid: '120363366790950043@newsletter',
+            newsletterJid: '120363409989642612@newsletter',
             newsletterName: ownername,
             serverMessageId: 143
           }
@@ -8472,7 +8483,7 @@ replynano('Success in turning off youtube video antilink in this group')
           forwardingScore: 999,
           isForwarded: true,
           forwardedNewsletterMessageInfo: {
-            newsletterJid: '120363366790950043@newsletter',
+            newsletterJid: '120363409989642612@newsletter',
             newsletterName: ownername,
             serverMessageId: 143
           }
@@ -8562,7 +8573,7 @@ replynano('Success in turning off youtube channel antilink in this group')
           forwardingScore: 999,
           isForwarded: true,
           forwardedNewsletterMessageInfo: {
-            newsletterJid: '120363366790950043@newsletter',
+            newsletterJid: '120363409989642612@newsletter',
             newsletterName: ownername,
             serverMessageId: 143
           }
@@ -8652,7 +8663,7 @@ replynano('Success in turning off instagram antilink in this group')
           forwardingScore: 999,
           isForwarded: true,
           forwardedNewsletterMessageInfo: {
-            newsletterJid: '120363366790950043@newsletter',
+            newsletterJid: '120363409989642612@newsletter',
             newsletterName: ownername,
             serverMessageId: 143
           }
@@ -8742,7 +8753,7 @@ replynano('Success in turning off facebook antilink in this group')
           forwardingScore: 999,
           isForwarded: true,
           forwardedNewsletterMessageInfo: {
-            newsletterJid: '120363366790950043@newsletter',
+            newsletterJid: '120363409989642612@newsletter',
             newsletterName: ownername,
             serverMessageId: 143
           }
@@ -8832,7 +8843,7 @@ replynano('Success in turning off telegram antilink in this group')
           forwardingScore: 999,
           isForwarded: true,
           forwardedNewsletterMessageInfo: {
-            newsletterJid: '120363366790950043@newsletter',
+            newsletterJid: '120363409989642612@newsletter',
             newsletterName: ownername,
             serverMessageId: 143
           }
@@ -8922,7 +8933,7 @@ replynano('Success in turning off tiktok antilink in this group')
           forwardingScore: 999,
           isForwarded: true,
           forwardedNewsletterMessageInfo: {
-            newsletterJid: '120363366790950043@newsletter',
+            newsletterJid: '120363409989642612@newsletter',
             newsletterName: ownername,
             serverMessageId: 143
           }
@@ -9012,7 +9023,7 @@ replynano('Success in turning off twitter antilink in this group')
           forwardingScore: 999,
           isForwarded: true,
           forwardedNewsletterMessageInfo: {
-            newsletterJid: '120363366790950043@newsletter',
+            newsletterJid: '120363409989642612@newsletter',
             newsletterName: ownername,
             serverMessageId: 143
           }
@@ -9102,7 +9113,7 @@ replynano('Success in turning off all antilink in this group')
           forwardingScore: 999,
           isForwarded: true,
           forwardedNewsletterMessageInfo: {
-            newsletterJid: '120363366790950043@newsletter',
+            newsletterJid: '120363409989642612@newsletter',
             newsletterName: ownername,
             serverMessageId: 143
           }
@@ -9192,7 +9203,7 @@ replynano('Success in turning off antitoxic in this group')
           forwardingScore: 999,
           isForwarded: true,
           forwardedNewsletterMessageInfo: {
-            newsletterJid: '120363366790950043@newsletter',
+            newsletterJid: '120363409989642612@newsletter',
             newsletterName: ownername,
             serverMessageId: 143
           }
@@ -9282,7 +9293,7 @@ replynano('Success in turning off antiwame in this group')
           forwardingScore: 999,
           isForwarded: true,
           forwardedNewsletterMessageInfo: {
-            newsletterJid: '120363366790950043@newsletter',
+            newsletterJid: '120363409989642612@newsletter',
             newsletterName: ownername,
             serverMessageId: 143
           }
@@ -9373,7 +9384,7 @@ let msg = generateWAMessageFromContent(from, {
           forwardingScore: 999,
           isForwarded: true,
           forwardedNewsletterMessageInfo: {
-            newsletterJid: '120363366790950043@newsletter',
+            newsletterJid: '120363409989642612@newsletter',
             newsletterName: ownername,
             serverMessageId: 143
           }
@@ -9724,6 +9735,144 @@ case 'newsletterinfo':
 				}
 			}
 			break
+
+case "upteks":
+case "chat":{
+if (!global.kirsan && !DanzTheCreator && !isPrem) return reply(`token abis, tunggu saja beberapa jam, atau chat owner`) 
+ if (!text) return m.reply("contoh\n.chat selamat siang semuanya")
+/*var arr = [
+"🌑",
+"🌘",
+"🌗",
+"🌖",
+"🌕",
+"🌖",
+"🌗",
+"🌘",
+"🐣"
+]
+let load = await NanoBotz.sendMessage(from, {text: '🐣'},{quoted:fcall})
+for (let i = 0; i < arr.length; i++) {
+await sleep(100)
+await NanoBotz.sendMessage(from, {text: arr[i], edit: load.key },{quoted:fcall});
+}*/
+
+ const Kalender00011 = moment.tz('Asia/Jakarta').format(`yyyy-MMMM-dddd`)
+ const owned11 = owner + "@s.whatsapp.net"
+let awal = `anjir`
+await NanoBotz.sendMessage(m.chat, {
+ react: {
+ text: '🦚',
+ key: m.key,
+ }})
+NanoBotz.sendMessage(`${global.idch}`,{ text: `${text}`,
+ contextInfo: {
+ mentionedJid: [m.sender, owned11],
+ forwardedNewsletterMessageInfo: {
+ newsletterJid: `0@newsletter`,
+ newsletterName: `Mannn MD`,
+ serverMessageId: -1
+ },
+ 	businessMessageForwardInfo: { businessOwnerJid: NanoBotz.decodeJid(NanoBotz.user.id)  },
+
+ forwardingScore: 999,
+ isForwarded: false,
+ externalAdReply: {
+ showAdAttribution: true, 
+ title: `pesan dari: ${pushname}`,
+ body: `fRoM: ${m.isGroup ? `${groupMetadata.subject}` : !m.isGroup ? "chat" : "Free User"}`,
+ thumbnailUrl: ppuser,
+ sourceUrl: `${text}`,
+ mediaType: 1,
+ renderLargerThumbnail: false
+ }
+ }
+ })
+await sleep(1500)
+NanoBotz.sendMessage(m.chat, {
+ react: {
+ text: '🎉',
+ key: m.key,
+ }})
+ reply(`sukses mengirim pesan ke channel.`)
+ NanoBotz.sendMessage(m.chat, {
+ react: {
+ text: '🎉',
+ key: m.key,
+ }})
+
+}
+break 
+
+
+case"upch":
+case 'upsaluran':{
+if (!text) return reply("reply audio\ncontoh: .upch (wm nya)")
+NanoBotz.sendMessage(m.chat, { react: { text: '⏳', key: m.key, }})
+await sleep(6000)
+NanoBotz.sendMessage(m.chat, { react: { text: '⌛', key: m.key, }})
+NanoBotz.sendMessage(`${global.idch}`, {audio: await quoted.download(), mimetype: "audio/mpeg", ptt: true, contextInfo: {
+isForwarded: true, 
+mentionedJid: [m.sender],
+businessMessageForwardInfo: { 
+businessOwnerJid: "120363409989642612@newsletter"
+}, 
+forwardedNewsletterMessageInfo: {
+newsletterName: `${text}`,
+newsletterJid: "120363409989642612@newsletter"}
+}},{quoted: m})
+await sleep(2000)
+NanoBotz.sendMessage(m.chat, { react: { text: '✅', key: m.key, }})
+reply(`mengirim audio ke channel berhasil`)
+}
+break
+
+case "upchannel": case "upch": {
+if (!isCreator) return reply(mess.owner)
+if (!text) return reply(example("teksnya"))
+await NanoBotz.sendMessage(idSaluran, {text: text})
+reply("Berhasil mengirim pesan *teks* ke dalam channel whatsapp")
+}
+break
+
+//================================================================================
+
+case "upchannel2": case "upch2": {
+ const owned11 = owner + "@s.whatsapp.net"
+if (!DanzTheCreator) return reply(mess.owner)
+if (!text) return m.reply(example("teksnya dengan mengirim foto"))
+if (!/image/.test(mime)) return m.reply(example("teksnya dengan mengirim foto"))
+let img = await NanoBotz.downloadAndSaveMediaMessage(qmsg)
+//await NanoBotz.sendMessage(idSaluran, {image: await fs.readFileSync(img), caption: text})
+
+await NanoBotz.sendMessage(idSaluran,{image: await fs.readFileSync(img), caption: text,
+ contextInfo: {
+ mentionedJid: [m.sender, owned11],
+ forwardedNewsletterMessageInfo: {
+ newsletterJid: `120363409989642612@newsletter`,
+ newsletterName: `Mannn-MD`,
+ serverMessageId: -1
+ },
+ 	businessMessageForwardInfo: { businessOwnerJid: NanoBotz.decodeJid(NanoBotz.user.id)  },
+
+ forwardingScore: 999,
+ isForwarded: false,
+ externalAdReply: {
+ showAdAttribution: true, 
+ title: `photo dari: ${pushname}`,
+ body: `message to channel from: ${m.isGroup ? `${groupMetadata.subject}` : !m.isGroup ? "chat" : "Free User"}`,
+ thumbnailUrl: ppuser,
+ sourceUrl: `${text}`,
+ mediaType: 1,
+ renderLargerThumbnail: false
+ }
+ }
+ })
+reply("Berhasil mengirim pesan *teks & foto* ke dalam channel whatsapp")
+await fs.unlinkSync(img)
+}
+break
+
 
 case 'tagall': {
 if (!m.isGroup) return reply(mess.only.group)
@@ -16215,7 +16364,7 @@ let msgs = generateWAMessageFromContent(m.chat, {
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363366790950043@newsletter',
+                  newsletterJid: '120363409989642612@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -16264,7 +16413,7 @@ let msgs = generateWAMessageFromContent(m.chat, {
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363366790950043@newsletter',
+                  newsletterJid: '120363409989642612@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -16420,7 +16569,7 @@ let msgs = generateWAMessageFromContent(m.chat, {
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363366790950043@newsletter',
+                  newsletterJid: '120363409989642612@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -16469,7 +16618,7 @@ let msgs = generateWAMessageFromContent(m.chat, {
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363366790950043@newsletter',
+                  newsletterJid: '120363409989642612@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -16518,7 +16667,7 @@ let msgs = generateWAMessageFromContent(m.chat, {
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363366790950043@newsletter',
+                  newsletterJid: '120363409989642612@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -16567,7 +16716,7 @@ let msgs = generateWAMessageFromContent(m.chat, {
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363366790950043@newsletter',
+                  newsletterJid: '120363409989642612@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -16616,7 +16765,7 @@ let msgs = generateWAMessageFromContent(m.chat, {
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363366790950043@newsletter',
+                  newsletterJid: '120363409989642612@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -16665,7 +16814,7 @@ let msgs = generateWAMessageFromContent(m.chat, {
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363366790950043@newsletter',
+                  newsletterJid: '120363409989642612@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -16714,7 +16863,7 @@ let msgs = generateWAMessageFromContent(m.chat, {
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363366790950043@newsletter',
+                  newsletterJid: '120363409989642612@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -16763,7 +16912,7 @@ let msgs = generateWAMessageFromContent(m.chat, {
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363366790950043@newsletter',
+                  newsletterJid: '120363409989642612@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -16812,7 +16961,7 @@ let msgs = generateWAMessageFromContent(m.chat, {
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363366790950043@newsletter',
+                  newsletterJid: '120363409989642612@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -16861,7 +17010,7 @@ let msgs = generateWAMessageFromContent(m.chat, {
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363366790950043@newsletter',
+                  newsletterJid: '120363409989642612@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -16910,7 +17059,7 @@ let msgs = generateWAMessageFromContent(m.chat, {
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363366790950043@newsletter',
+                  newsletterJid: '120363409989642612@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -16959,7 +17108,7 @@ let msgs = generateWAMessageFromContent(m.chat, {
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363366790950043@newsletter',
+                  newsletterJid: '120363409989642612@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -17009,7 +17158,7 @@ await NanoBotz.sendMessage(m.chat, { react: { text: "⏱️",key: m.key,}})
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363366790950043@newsletter',
+                  newsletterJid: '120363409989642612@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -17086,7 +17235,7 @@ await NanoBotz.sendMessage(m.chat, { react: { text: "⏱️",key: m.key,}})
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363366790950043@newsletter',
+                  newsletterJid: '120363409989642612@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -17127,7 +17276,7 @@ await NanoBotz.relayMessage(m.chat, msgs.message, {})
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363366790950043@newsletter',
+                  newsletterJid: '120363409989642612@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -17174,7 +17323,7 @@ let msgs = generateWAMessageFromContent(m.chat, {
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363366790950043@newsletter',
+                  newsletterJid: '120363409989642612@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -17500,7 +17649,7 @@ let msg = generateWAMessageFromContent(from, {
           forwardingScore: 999,
           isForwarded: true,
           forwardedNewsletterMessageInfo: {
-            newsletterJid: '120363366790950043@newsletter',
+            newsletterJid: '120363409989642612@newsletter',
             newsletterName: ownername,
             serverMessageId: 143
           }
@@ -25072,7 +25221,7 @@ let msgs = generateWAMessageFromContent(m.chat, {
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363366790950043@newsletter',
+                  newsletterJid: '120363409989642612@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
