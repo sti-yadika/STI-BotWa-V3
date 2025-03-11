@@ -9691,6 +9691,41 @@ if (!isBotAdmins) return reply('_Bot Harus Menjadi Admin Terlebih Dahulu_')
                }
                break
 
+case 'newsletterinfo':
+			case 'getnewsletterinfo':{
+				if (!isPremium) return newReply(mess.premium);
+				if (!text) return newReply(`Kirim perintah ${prefix + command} <link>`);
+				if (!isUrl(args[0]) && !args[0].includes('whatsapp.com/channel')) return newReply(mess.error);
+				function formatDate(timestamp) {
+					const date = new Date(timestamp * 1000);
+					const months = [
+						'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
+						'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'
+					];
+					const day = date.getDate();
+					const month = months[date.getMonth()];
+					const year = date.getFullYear();
+					return `${day} ${month} ${year}`;
+				}
+				try {
+					let result = args[0].split('https://whatsapp.com/channel/')[1];
+					let data = await sock.newsletterMetadata("invite", result);
+					let teks = `「 *NEWSLETTER METADATA* 」\n\n`;
+					teks += `- *Name*: ${data.name}\n`;
+					teks += `- *ID*: ${data.id}\n`;
+					teks += `- *Status*: ${data.state}\n`;
+					teks += `- *Dibuat Pada*: ${formatDate(data.creation_time)}\n`;
+					teks += `- *Subscribers*: ${data.subscribers}\n`;
+					teks += `- *Meta Verify*: ${data.verification}\n`;
+					teks += `- *React Emoji*: ${data.reaction_codes}\n`;
+					teks += `- *Description*:\n${data.description}\n`;
+				
+				} catch (error) {
+					newReply('*Data tidak ditemukan!* ☹️');
+				}
+			}
+			break
+
 case 'tagall': {
 if (!m.isGroup) return reply(mess.only.group)
 if (!isAdmins && !DanzTheCreator) return reply('Khusus Admin!!')
