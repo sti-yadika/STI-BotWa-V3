@@ -9693,7 +9693,7 @@ if (!isBotAdmins) return reply('_Bot Harus Menjadi Admin Terlebih Dahulu_')
 
 case 'newsletterinfo':
 			case 'getnewsletterinfo':{
-				if (!isPremium) return newReply(mess.premium);
+				if (!isPrem) return newReply(mess.premium);
 				if (!text) return newReply(`Kirim perintah ${prefix + command} <link>`);
 				if (!isUrl(args[0]) && !args[0].includes('whatsapp.com/channel')) return newReply(mess.error);
 				function formatDate(timestamp) {
