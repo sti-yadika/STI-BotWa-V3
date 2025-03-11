@@ -23147,7 +23147,7 @@ if (!text) return replynano(`Example ${prefix+command} want to sleep`)
 let user = global.db.users[m.sender]
 user.afkTime = + new Date
 user.afkReason = args.join(" ")
-reply(`${m.pushName} Telah MelMelakukan AFK\nAlasan : ${args.join(" ") ? args.join(" ") : ''}`)
+reply(`${m.pushName} Telah Melakukan AFK\nAlasan : ${args.join(" ") ? args.join(" ") : ''}`)
 }
 break
 case 'animewall': case 'animewallpaper':
