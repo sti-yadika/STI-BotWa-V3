@@ -178,6 +178,9 @@ NanoBotz.ev.emit('messages.upsert', msg)
         const isGroupAdmins = m.isGroup ? groupAdmins.includes(m.sender) : false
     	const isAdmins = m.isGroup ? groupAdmins.includes(m.sender) : false
      const jangan = m.isGroup ? pler.includes(m.chat) : false
+     const example = (teks) => {
+return `\n *Contoh Penggunaan :*\n Ketik *${prefix+command}* ${teks}\n`
+}
     	const isPrem = prem.includes(m.sender)
     	const nomore = m.sender.replace(/[^0-9]/g, '')
     	const fsaluran = { key : {
