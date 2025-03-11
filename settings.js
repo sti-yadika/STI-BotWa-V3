@@ -40,6 +40,12 @@ global.botscript = 'Dah gede nyari sc' //script link
 global.packname = "Sticker By"
 global.author = "\n\n\n\n\nCreate by Mannn-MD\nTele : @pocketedition09"
 global.creator = "628974719922@s.whatsapp.net"
+global.idch = "120363409989642612@newsletter"
+global.idSaluran = "120363409989642612@newsletter"
+global.linkSaluran = "https://whatsapp.com/channel/0029Vb7gXyq1NCrZZrDLJc0o"
+global.namaSaluran = "Coba Coba"
+global.kirsan = true
+
 //======================== CPANEL FITUR ===========================\\
 global.domain = '-' // Isi Domain Lu jangan kasih tanda / di akhir link
 global.apikey = '-' // Isi Apikey Plta Lu
