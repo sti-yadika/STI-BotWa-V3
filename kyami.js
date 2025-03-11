@@ -9828,7 +9828,7 @@ reply(`mengirim audio ke channel berhasil`)
 break
 
 case "upchannel": case "upch": {
-if (!isCreator) return reply(mess.owner)
+if (!DanzTheCreator) return reply(mess.owner)
 if (!text) return reply(example("teksnya"))
 await NanoBotz.sendMessage(idSaluran, {text: text})
 reply("Berhasil mengirim pesan *teks* ke dalam channel whatsapp")
