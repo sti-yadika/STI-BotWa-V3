@@ -1,7 +1,7 @@
 const chalk = require("chalk")
 const fs = require("fs")
 //aumto presence update
-global.autoTyping = false //auto tying in gc (true to on, false to off)
+global.autoTyping = true //auto tying in gc (true to on, false to off)
 global.autoRecord = false //auto recording (true to on, false to off)
 global.autoblockmorroco = true //auto block 212 (true to on, false to off)
 global.autokickmorroco = true //auto kick 212 (true to on, false to off) 
@@ -40,11 +40,7 @@ global.botscript = 'Dah gede nyari sc' //script link
 global.packname = "Sticker By"
 global.author = "\n\n\n\n\nCreate by Mannn-MD\nTele : @pocketedition09"
 global.creator = "628974719922@s.whatsapp.net"
-global.idch = "120363409989642612@newsletter"
-global.idSaluran = "120363409989642612@newsletter"
-global.linkSaluran = "https://whatsapp.com/channel/0029Vb7gXyq1NCrZZrDLJc0o"
-global.namaSaluran = "Coba Coba"
-global.kirsan = true
+
 
 //======================== CPANEL FITUR ===========================\\
 global.domain = '-' // Isi Domain Lu jangan kasih tanda / di akhir link
@@ -204,7 +200,7 @@ wait: "*_Wait For Mannn Menu♡._*",
        owner: "Maaf Kak Fitur Ini Hanya Bisa Digunakan Sama Mannn",
        admin: "Maaf Kak Fitur Ini Hanya Bisa Digunakan Sama Admin Bot",
        badmin: "Maaf Kak Kaya Nya Kakak Tidak Bisa Menggunakan Fitur Ini Di Karenakan Bot Bukan Admin Group Dongo",
-       premium: "Fitur ini Khsusus Buat User Premium Kesayangan Kyami",
+       premium: "Fitur ini Khsusus Buat User Premium Kesayangan Mannn",
    }
 }
  
