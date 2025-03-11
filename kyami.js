@@ -24496,7 +24496,7 @@ let jawab = `*Rate ${text}*\nAnswer : ${kah}%`
             await replynano(jawab)
             }
             break
-            case 'runtime': {
+            case 'bot': {
             	let lowq = `*The Bot Has Been Online For:*\n*${runtime(process.uptime())}*`
 replynano(lowq)
             	}
