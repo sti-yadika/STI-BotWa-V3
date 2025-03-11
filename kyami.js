@@ -738,8 +738,7 @@ function clockString(ms) {
   return [h, m, s].map(v => v.toString().padStart(2, 0) ).join(':')
 }
 if (db.users[m.sender].afkTime > -1) {
-let user = global.db.users[m.sender]
-reply(`
+let user = global.db.users[m.sender].reply(`
 You Quit AFK${user.afkReason ? ' After: ' + user.afkReason : ''}
 During ${clockString(new Date - user.afkTime)}
 `.trim())
