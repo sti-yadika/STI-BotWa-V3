@@ -16093,7 +16093,7 @@ case 'anyeong': {
   reply('nee anyeong chinguyaa')
 }
 break
-case 'bot': {
+case 'runtime': {
   const msgai = `${global.botname} bot, Aktif kak`
 await NanoBotz.sendMessage(m.chat, {
       audio: { url: `https://nue-api.vercel.app/api/tts?lang=id&text=${msgai}` },
