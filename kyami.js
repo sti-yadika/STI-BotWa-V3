@@ -10832,6 +10832,71 @@ _📚 Baca yang dibawah ya!_
 }
 break
 //=========================================\\
+
+case 'jadwalsholat': {
+if (!text) return replynano(`• *Example :* ${prefix + command} Pasuruan`)
+async function jadwalSholat(kota) {
+ try {
+ const { data } = await axios.get(`https://www.dream.co.id/jadwal-sholat/${kota}/`);
+ const $ = cheerio.load(data);
+ const rows = $(".table-index-jadwal tbody tr");
+ const jadwal = [];
+ rows.each((index, row) => {
+ const cols = $(row).find("td");
+ jadwal.push({
+ subuh: $(cols[1]).text().trim(),
+ duha: $(cols[2]).text().trim(),
+ zuhur: $(cols[3]).text().trim(),
+ asar: $(cols[4]).text().trim(),
+ magrib: $(cols[5]).text().trim(),
+ isya: $(cols[6]).text().trim(),
+ });
+ });
+ return jadwal[0];
+ } catch (error) {
+ throw new Error("Gagal mengambil data jadwal sholat");
+ }
+}
+ try {
+ const jadwal = await jadwalSholat(text);
+ const caption = `
+┌「 ${text.toUpperCase()} 」
+├ Subuh: ${jadwal.subuh}
+├ Dhuha: ${jadwal.duha}
+├ Dzuhur: ${jadwal.zuhur}
+├ Ashar: ${jadwal.asar}
+├ Maghrib: ${jadwal.magrib}
+├ Isya: ${jadwal.isya}
+└──────────`.trim();
+ const thumbnailUrl = "https://files.catbox.moe/gk0e3n.png";
+ await NanoBotz.sendMessage(m.chat, {
+ text: caption,
+ contextInfo: {
+ forwardingScore: 2025,
+ isForwarded: true,
+ forwardedNewsletterMessageInfo: {
+ newsletterJid: '120363409989642612@newsletter',
+ serverMessageId: null,
+ newsletterName: `${global.botname}`,
+ },
+ externalAdReply: {
+ title: `Jadwal Sholat Harian`,
+ mediaType: 1,
+ previewType: 1,
+ body: `Informasi waktu sholat untuk kota ${text}`,
+ thumbnailUrl,
+ renderLargerThumbnail: true,
+ mediaUrl: "https://www.islamicfinder.org",
+ sourceUrl: "https://www.islamicfinder.org",
+ },
+ },
+ }, { quoted: m });
+ } catch (error) {
+ reply("Gagal mendapatkan jadwal sholat. Pastikan nama kota benar.");
+ }
+}
+break
+
 case 'niatsholat': {
     if (!q) return replynano(`Contoh Penggunaan :\nniatsholat Subuh`)
 const niatsholat = [
