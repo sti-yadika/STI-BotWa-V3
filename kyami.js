@@ -2880,21 +2880,23 @@ replynano('*Sukses Berubah Menjadi Pemakaian Sendiri*')
             }
             break
 
-case 'smeme': case 'stickermeme': case 'stickmeme': {
-if (!/webp/.test(mime) && /image/.test(mime)) {
-if (!text) return replynano(`Usage: ${prefix + command} text1|text2`)
-let { TelegraPh } = require('./lib/uploader')
-atas = text.split('|')[0] ? text.split('|')[0] : '-'
-bawah = text.split('|')[1] ? text.split('|')[1] : '-'
-mee = await NanoBotz.downloadAndSaveMediaMessage(quoted)
-mem = await TelegraPh(mee)
-meme = `https://api.memegen.link/images/custom/${encodeURIComponent(atas)}/${encodeURIComponent(bawah)}.png?background=${mem}`
-memek = await NanoBotz.sendImageAsSticker(m.chat, meme, m, { packname: global.packname, author: global.author })
-} else {
-replynano(`Kirim/Balas Gambar Dengan Caption ${prefix + command} text1|text2`)
-}
-}
-break
+case 'smeme': case 'stickmeme': case 'stikmeme': case 'stickermeme': case 'stikermeme': {
+				try {
+					//if (!isPremium) return m.reply(mess.prem)
+					if (!/image|webp/.test(mime)) return replynano(`Kirim/reply image/sticker\nDengan caption ${prefix + command} atas|bawah`)
+					if (!text) return replynano(`Kirim/reply image/sticker dengan caption ${prefix + command} atas|bawah`)
+					reply(mess.wait)
+					let atas = text.split`|`[0] ? text.split`|`[0] : '-'
+					let bawah = text.split`|`[1] ? text.split`|`[1] : '-'
+					let media = await quoted.download()
+					let mem = await UguuSe(media)
+					let smeme = `https://api.memegen.link/images/custom/${encodeURIComponent(atas)}/${encodeURIComponent(bawah)}.png?background=${mem.url}`
+					await NanoBotz.sendAsSticker(m.chat, smeme, m, { packname: global.packname, author: global.author })
+				} catch (e) {
+					reply('Server Meme Sedang Offline!')
+				}
+			}
+			break
 
 case 'jadibot': {
      replynano('mau jadi bot ?')
