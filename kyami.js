@@ -16345,7 +16345,7 @@ let msgs = generateWAMessageFromContent(m.chat, {
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363204138641225@newsletter',
+                  newsletterJid: '120363409989642612@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -16394,7 +16394,7 @@ let msgs = generateWAMessageFromContent(m.chat, {
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363204138641225@newsletter',
+                  newsletterJid: '120363409989642612@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -17255,7 +17255,7 @@ let msgs = generateWAMessageFromContent(m.chat, {
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363204138641225@newsletter',
+                  newsletterJid: '120363409989642612@newsletter',
                   newsletterName: botname,
                   serverMessageId: 143
                 }
@@ -17277,7 +17277,7 @@ case 'open-ai': {
 	if (!text) return replynano(`*• Example:* ${prefix + command} Siapakah orang yang telah menemukan Komputer di jaman Majapahit`);  
 await NanoBotz.sendMessage(m.chat, { react: { text: "⏱️",key: m.key,}}) 
         try {
-let gpt = await (await fetch(`https://widipe.com/openai?text=${text}`)).json()
+let gpt = await (await fetch(`https://api.paxsenix.biz.id/ai/gpt4omini=${text}`)).json()
 let msgs = generateWAMessageFromContent(m.chat, {
   viewOnceMessage: {
     message: {
@@ -17307,7 +17307,7 @@ let msgs = generateWAMessageFromContent(m.chat, {
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363204138641225@newsletter',
+                  newsletterJid: '120363409989642612@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -17377,7 +17377,7 @@ let msgs = generateWAMessageFromContent(m.chat, {
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363204138641225@newsletter',
+                  newsletterJid: '120363409989642612@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
